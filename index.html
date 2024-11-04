@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah Ekonomi Digital Indonesia</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Perkembangan Ekonomi Digital di Indonesia</h1>
+    <p>Klik setiap periode untuk mempelajari lebih lanjut.</p>
+  </header>
+  
+  <section class="topics">
+    <div class="topic" onclick="showInfo('earlyInternet')">
+      <h2>Awal Internet di Indonesia</h2>
+      <p>Kapan internet mulai hadir di Indonesia.</p>
+    </div>
+    <div class="topic" onclick="showInfo('growth2000')">
+      <h2>Infrastruktur Tahun 2000-2010</h2>
+      <p>Pertumbuhan infrastruktur dan pengguna teknologi.</p>
+    </div>
+    <div class="topic" onclick="showInfo('ecommerceExpansion')">
+      <h2>Ekspansi E-commerce 2011-2015</h2>
+      <p>Pertumbuhan e-commerce dan startup.</p>
+    </div>
+    <div class="topic" onclick="showInfo('fintechUnicorn')">
+      <h2>Fintech dan Unicorn 2016-2020</h2>
+      <p>Era fintech dan lahirnya unicorn.</p>
+    </div>
+    <div class="topic" onclick="showInfo('innovationPostPandemic')">
+      <h2>Pemulihan dan Inovasi 2021-2023</h2>
+      <p>Ekonomi digital pasca pandemi.</p>
+    </div>
+  </section>
+  
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="infoTitle"></h2>
+      <p id="infoText"></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
